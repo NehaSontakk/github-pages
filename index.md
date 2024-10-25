@@ -1,4 +1,4 @@
 ---
-title: "Experiments with Graphs and Networks"
+title: "Nodes, Edges, and Microbes"
 ---
 
