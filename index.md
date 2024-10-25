@@ -1,4 +1,4 @@
 ---
-Experiments with Graphs
+Experiments with Graphs and Networks
 ---
 
