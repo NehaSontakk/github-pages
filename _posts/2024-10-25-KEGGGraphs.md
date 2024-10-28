@@ -18,7 +18,7 @@ Which is also represented like this:
 
 This intricate expression represents a network of reactions and interactions that are challenging to reconstruct using reaction and compound data alone. After an unsuccessful search for an existing parser capable of interpreting these KEGG module expressions, I decided to develop one myself. _Disclaimer: I did this with the assistance of ChatGPT, and it was fabulous and pretty great at helping me construct a solution._
 
-Here is the link to the complete code: https://github.com/NehaSontakk/KEGG_GRAPH/blob/abe6d4484e4d69e0aae0966617edea2db0955be4/KO_graph_from_expression.ipynb
+Here is the link to the complete code: ![KO_graph_from_expression.ipynb](https://github.com/NehaSontakk/KEGG_GRAPH/blob/abe6d4484e4d69e0aae0966617edea2db0955be4/KO_graph_from_expression.ipynb)
 
 ## Generating Tokens from Our String
 
