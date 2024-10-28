@@ -1,5 +1,5 @@
 ---
-title: Generating graphs from KEGG
+title: Generating KO (protein) graphs from string definitions via the KEGG API 
 date: 2024-10-25
 ---
 
