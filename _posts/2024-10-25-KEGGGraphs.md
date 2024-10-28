@@ -1,7 +1,21 @@
 ---
-title: Generating KO (protein) graphs from string definitions via the KEGG API 
+title: Parsing KEGG module expressions to decipher complex KO (protein) relationships into graphical representations
 date: 2024-10-25
 ---
+
+I needed to generate accurate representations of metabolic pathways and protein interactions. While exploring the KEGG (Kyoto Encyclopedia of Genes and Genomes) database to reconstruct metabolic pathways, I was stuck due trying to deriving the relationships between KEGG Orthology (KO) identifiers from reaction and compound data alone. 
+
+KEGG's reaction and compound graphs provide valuable information, but they often fall short in depicting complex relationships, especially those involving protein complexes and alternative pathways. For instance, proteins that function together as a complex are represented using '+' signs (e.g., K01657+K01658), and alternative pathways are indicated using commas. This detailed representation is not readily apparent or extractable from the reaction and compound data provided by the KEGG API.
+
+I then found that KEGG encapsulates their entire module graphs in the form of compact string expressions. These expressions concisely encode the complex relationships between KOs, including sequential reactions, protein complexes, and alternative pathways. For example, the expression for KEGG module M00023 is:
+
+```
+(((K01657+K01658,K13503,K13501,K01656) K00766),K13497) (((K01817,K24017) (K01656,K01609)),K13498,K13501) (K01695+(K01696,K06001),K01694)
+```
+
+This intricate expression represents a network of reactions and interactions that are challenging to reconstruct using reaction and compound data alone. After an unsuccessful search for an existing parser capable of interpreting these KEGG module expressions, I decided to develop one myself. _Disclaimer: I did this with the assistance of ChatGPT, and it was fabulous and pretty great at helping my construct a solution._
+
+Here is the link to the complete code: https://github.com/NehaSontakk/KEGG_GRAPH/blob/abe6d4484e4d69e0aae0966617edea2db0955be4/KO_graph_from_expression.ipynb
 
 ## Generating Tokens from Our String
 
@@ -571,4 +585,10 @@ def visualize_graph(nodes, edges):
 
 #### Output
 
-![alt text](_posts/Pictures/1_KEGGReconstructed.png)
+![_posts/Pictures/1_KEGGReconstructed.png](https://github.com/NehaSontakk/github-pages/blob/main/_posts/Pictures/1_KEGGReconstructed.png)
+
+### Comparison with the KEGG Website
+
+KEGG contains hand drawn images of its modules, and their representation for M00023 is given below:
+
+![_posts/Pictures/2_ko_M00023.png](https://github.com/NehaSontakk/github-pages/blob/main/_posts/Pictures/2_ko_M00023.png)
