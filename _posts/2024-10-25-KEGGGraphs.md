@@ -1,5 +1,5 @@
 ---
-title: Parsing KEGG module expressions to decipher complex KO (protein) relationships into graphical representations
+title: Parsing KEGG module expressions to decipher KO (protein) relationships into graphical representations
 date: 2024-10-25
 ---
 
