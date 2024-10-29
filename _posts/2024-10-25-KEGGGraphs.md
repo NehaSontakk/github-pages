@@ -13,9 +13,9 @@ I found that KEGG encapsulates their entire module graphs in the form of compact
 (((K01657+K01658,K13503,K13501,K01656) K00766),K13497) (((K01817,K24017) (K01656,K01609)),K13498,K13501) (K01695+(K01696,K06001),K01694)
 ```
 
-Which is also represented like this:
+Which is also represented by the KEGG website through a series of hand drawn steps (or so I've been told):
 ![KEGG_Module23](https://raw.githubusercontent.com/NehaSontakk/github-pages/main/_posts/Pictures/2_ko_M00023.png)
-
+It is impossible to access the data via the diagram. 
 
 This intricate expression represents a network of reactions and interactions that are challenging to reconstruct using reaction and compound data alone. After an unsuccessful search for an existing parser capable of interpreting these KEGG module expressions, I decided to develop one myself. _Disclaimer: I did this with the assistance of ChatGPT, and it was fabulous and pretty great at helping me construct a solution._
 
