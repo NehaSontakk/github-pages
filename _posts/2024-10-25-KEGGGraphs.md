@@ -14,7 +14,8 @@ I found that KEGG encapsulates their entire module graphs in the form of compact
 ```
 
 Which is also represented like this:
-![_posts/Pictures/2_ko_M00023.png](https://github.com/NehaSontakk/github-pages/blob/main/_posts/Pictures/2_ko_M00023.png)
+![KEGG_Module23](https://raw.githubusercontent.com/NehaSontakk/github-pages/main/_posts/Pictures/2_ko_M00023.png)
+
 
 This intricate expression represents a network of reactions and interactions that are challenging to reconstruct using reaction and compound data alone. After an unsuccessful search for an existing parser capable of interpreting these KEGG module expressions, I decided to develop one myself. _Disclaimer: I did this with the assistance of ChatGPT, and it was fabulous and pretty great at helping me construct a solution._
 
@@ -589,10 +590,10 @@ def visualize_graph(nodes, edges):
 
 #### Output
 
-![_posts/Pictures/1_KEGGReconstructed.png](https://github.com/NehaSontakk/github-pages/blob/main/_posts/Pictures/1_KEGGReconstructed.png)
+![Reconstructed_KEGG_Module23](https://raw.githubusercontent.com/NehaSontakk/github-pages/blob/main/_posts/Pictures/1_KEGGReconstructed.png)
 
 ### Comparison with the KEGG Website
 
 KEGG contains hand drawn images of its modules, and their representation for M00023 is given below:
 
-![_posts/Pictures/2_ko_M00023.png](https://github.com/NehaSontakk/github-pages/blob/main/_posts/Pictures/2_ko_M00023.png)
+![KEGG_Module23](https://raw.githubusercontent.com/NehaSontakk/github-pages/main/_posts/Pictures/2_ko_M00023.png)
