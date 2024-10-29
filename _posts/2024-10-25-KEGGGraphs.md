@@ -1,5 +1,5 @@
 ---
-title: Parsing KEGG Module Expressions to Vizualize Complex Biological Pathways in Python
+title: Parsing KEGG Module Expressions to Vizualize Complex Biological Pathways (in Python)
 date: 2024-10-25
 ---
 
