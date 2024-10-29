@@ -590,7 +590,7 @@ def visualize_graph(nodes, edges):
 
 #### Output
 
-![Reconstructed_KEGG_Module23](https://raw.githubusercontent.com/NehaSontakk/github-pages/blob/main/_posts/Pictures/1_KEGGReconstructed.png)
+![Reconstructed_KEGG_Module23](https://raw.githubusercontent.com/NehaSontakk/github-pages/main/_posts/Pictures/1_KEGGReconstructed.png)
 
 ### Comparison with the KEGG Website
 
