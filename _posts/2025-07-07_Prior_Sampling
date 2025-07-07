@@ -1,1 +1,8 @@
+---
+title: Understanding methods to sample for a bayesian prior
+date: 2025-07-07
+---
 
+- Bacterial representations of genomic data are imcomplete and we are not able to get a correct representation of the data
+- Thats why I've always been interested in understanding how do we even sample?
+- Whats the right way to think about thi?
